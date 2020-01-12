@@ -1,0 +1,33 @@
+$def with (notes)
+$if session['user'] != None:
+    <div class="container">
+        <div class="note-box">
+            <form id="note-activity">
+                <label for="comment">Twoja Notatka</label>
+                <textarea name="content" class="form-control" rows="5" id="comment" placeholder="Wstaw notatkę $session['user']['username']"></textarea>
+                <div class="row">
+                    <div class="col text-center">
+                        <button id="note-button" style="align-self: center" class="btn btn-info btn-raised waves-effect"
+                            type="submit"><span class="mdi mdi-send"></span>Wyślij
+                    </button>
+                     </div>
+                </div>
+            </form>
+    </div>
+
+    $for note in notes:
+        <div class="showall">
+            <div class="header">
+                <div class="avatar">
+                <a href="/profile">$note['user']['username']</a>
+                </div>
+                <div class="content">
+                $note['content']
+                </div>
+            </div>
+        </div>
+    </div>
+$else:
+    <h1 align="center">Test</h1>
+
+
