@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$" libraries="{bootstrap, jquery-3.4.1, popper}" />
+    <file url="file://$PROJECT_DIR$" libraries="{bootstrap, codemirror, font-awesome, froala_editor.pkgd, froala_style, jquery-3.4.1, magic-grid.cjs, popper, xml}" />
   </component>
 </project>

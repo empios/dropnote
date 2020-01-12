@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 
 
+
 class Note:
     def __init__(self):
         self.client = MongoClient()
@@ -17,5 +18,4 @@ class Note:
         for note in all:
             note["user"] = self.Users.find_one({"username": note["user"]})
             new_note.append(note)
-
         return new_note

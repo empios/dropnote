@@ -10,7 +10,7 @@ urls = (
     '/register', 'register',
     '/login', 'login',
     '/logout', 'logout',
-    '/post-activity', 'noteActivity',
+    '/note-activity', 'noteActivity',
     '/login-activity', 'loginActivity',
     '/register-activity', 'registerActivity'
 )

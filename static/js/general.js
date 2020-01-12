@@ -3,7 +3,7 @@ $(document).ready(function () {
         e.preventDefault();
         var form = $(this).serialize();
         $.ajax({
-            url: '/post-activity',
+            url: '/note-activity',
             type: 'POST',
             data: form,
             success: function (response) {
@@ -67,6 +67,19 @@ $(document).ready(function () {
                 }
             }
         });
-
     });
+
+    $(function() {
+        $('textarea').froalaEditor();
+    });
+
+    function add() {
+        var txt=document.getElementById("comment").value;
+        var input = document.getElementById("comment");
+        input.value=txt;
+    }
+
+    var str = document.getElementById('purify').textContent;
+    var newhtml = $.html(str);
+    document.getElementById('purify').append(newhtml);
 });

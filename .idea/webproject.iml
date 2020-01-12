@@ -7,5 +7,11 @@
     <orderEntry type="library" name="jquery-3.4.1" level="application" />
     <orderEntry type="library" name="popper" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="magic-grid.cjs" level="application" />
+    <orderEntry type="library" name="froala_editor.pkgd" level="application" />
+    <orderEntry type="library" name="font-awesome" level="application" />
+    <orderEntry type="library" name="codemirror" level="application" />
+    <orderEntry type="library" name="froala_style" level="application" />
+    <orderEntry type="library" name="xml" level="application" />
   </component>
 </module>
